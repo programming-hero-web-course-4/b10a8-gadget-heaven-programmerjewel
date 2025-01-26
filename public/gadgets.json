@@ -158,5 +158,153 @@
     ],
     "availability": true,
     "rating": 4.4
+  },
+  {
+    "product_id": 11,
+    "product_title": "HP Spectre x360 14",
+    "product_image": "https://i.ibb.co.com/9Gq5Qzx/hp-x360.png",
+    "category": "Laptop",
+    "price": 1399.00,
+    "description": "Versatile 2-in-1 laptop with a stylish design and powerful performance.",
+    "specification": [
+      "14-inch OLED display",
+      "13th Gen Intel Core i7 processor",
+      "16GB RAM, 512GB SSD",
+      "Up to 9 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 12,
+    "product_title": "Apple MacBook Air M2",
+    "product_image": "https://i.ibb.co.com/k93dmVS/macbook-m2.png",
+    "category": "Laptop",
+    "price": 1299.00,
+    "description": "Stylish and powerful laptop with a premium build and 12th Gen Intel processor.",
+    "specification": [
+      "13.4-inch OLED display",
+      "12th Gen Intel Core i7 processor",
+      "16GB RAM, 512GB SSD",
+      "Up to 8 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 13,
+    "product_title": "Asus TUF Gaming A15 FA506NFR",
+    "product_image": "https://i.ibb.co.com/VSkRZgV/asus-gaming-a15.png",
+    "category": "Laptop",
+    "price": 1899.00,
+    "description": "Lightweight and durable business laptop with excellent performance and security features.",
+    "specification": [
+      "14-inch OLED display",
+      "13th Gen Intel Core i7 processor",
+      "16GB RAM, 1TB SSD",
+      "Up to 10 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 14,
+    "product_title": "MSI Thin 15 B13UC",
+    "product_image": "https://i.ibb.co.com/GdtBtYC/msi-15.png",
+    "category": "Laptop",
+    "price": 1999.00,
+    "description": "Powerful gaming laptop with a sleek design and high-refresh-rate display.",
+    "specification": [
+      "14-inch QHD+ 165Hz display",
+      "NVIDIA GeForce RTX 4070",
+      "16GB RAM, 1TB SSD",
+      "Up to 8 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 15,
+    "product_title": "ASUS ROG Zephyrus G14",
+    "product_image": "https://i.ibb.co.com/BZvnzMj/asus-g14.png",
+    "category": "Laptop",
+    "price": 1699.00,
+    "description": "Compact and powerful gaming laptop with a unique AniMe Matrix display.",
+    "specification": [
+      "14-inch QHD+ 165Hz display",
+      "AMD Ryzen 9 7940HS",
+      "16GB RAM, 1TB SSD",
+      "Up to 9 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 16,
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://i.ibb.co.com/7ysSy8N/apple-watch.png",
+    "category": "Smartwatch",
+    "price": 399.00,
+    "description": "Elegant and feature-rich smartwatch with advanced health and fitness tracking.",
+    "specification": [
+      "Always-On Retina Display",
+      "S8 SiP",
+      "Blood Oxygen & ECG apps",
+      "Crash Detection",
+      "Water Resistance"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 17,
+    "product_title": "Samsung Galaxy Watch 6",
+    "product_image": "https://i.ibb.co.com/YbBjPy3/samsung-watch.png",
+    "category": "Smartwatch",
+    "price": 299.00,
+    "description": "Stylish and versatile smartwatch with powerful features and long battery life.",
+    "specification": [
+      "Super AMOLED Display",
+      "Exynos W920 processor",
+      "Blood Pressure & ECG Monitoring",
+      "Sleep Tracking",
+      "Water & Dust Resistance"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 18,
+    "product_title": "Havit M9035",
+    "product_image": "https://i.ibb.co.com/q5fs3td/havit.png",
+    "category": "Smartwatch",
+    "price": 99.00,
+    "description": "Premium smartwatch for athletes with advanced sports tracking and health monitoring features.",
+    "specification": [
+      "AMOLED Display",
+      "Built-in GPS",
+      "Music Storage & Playback",
+      "Advanced Sleep Tracking",
+      "Multiple Sports Apps"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 19,
+    "product_title": "Fitbit Sense 2",
+    "product_image": "https://i.ibb.co.com/SVXRxC4/fitbit-sense-2.png",
+    "category": "Smartwatch",
+    "price": 299.00,
+    "description": "Health-focused smartwatch with advanced stress management and sleep tracking features.",
+    "specification": [
+      "AMOLED Display",
+      "Built-in GPS",
+      "Stress Management Tools",
+      "Skin Temperature Sensor",
+      "Water Resistance"
+    ],
+    "availability": true,
+    "rating": 4.5
   }
 ]

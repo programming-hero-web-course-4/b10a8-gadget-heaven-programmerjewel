@@ -6,8 +6,11 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Root from './components/Root/Root';
-import Home from './components/Home/Home';
+
+import Home from './pages/Home/Home';
+import Statistics from './pages/statistics/Statistics'
 import Errorpage from './components/Error Page/Errorpage';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: '/statistics',
+        element: <Statistics></Statistics>
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>
       }
     ]
   },
