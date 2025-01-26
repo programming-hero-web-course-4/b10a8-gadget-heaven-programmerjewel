@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Xiaomi Redmi 13",
+    "product_image": "https://i.ibb.co.com/6nbqd97/redmi-13.png",
+    "category": "Smartphone",
+    "price": 1299.99,
+    "description": "Flagship smartphone with powerful camera and stunning display.",
+    "specification": [
+      "6.73-inch AMOLED display",
+      "Snapdragon 8 Gen 2 processor",
+      "50MP main camera",
+      "6GB RAM, 128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 2,
+    "product_title": "iPhone 14 Pro Max",
+    "product_image": "https://i.ibb.co.com/whrFYCN/iphone-14-pro-max.png",
+    "category": "Smartphone",
+    "price": 1099.00,
+    "description": "Premium smartphone with advanced camera system and A16 Bionic chip.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A16 Bionic chip",
+      "48MP main camera",
+      "12GB RAM, 256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 3,
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/qBdK0Vf/samsung-s23.png",
+    "category": "Smartphone",
+    "price": 1199.00,
+    "description": "Versatile smartphone with S Pen support and powerful camera system.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 2 processor",
+      "200MP main camera",
+      "12GB RAM, 256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 4,
+    "product_title": "Google Pixel 7 Pro",
+    "product_image": "https://i.ibb.co.com/NLbKm90/pixel-7-pro.png",
+    "category": "Smartphone",
+    "price": 899.00,
+    "description": "Pure Android experience with excellent camera and AI features.",
+    "specification": [
+      "6.7-inch OLED display",
+      "Google Tensor G2 processor",
+      "50MP main camera",
+      "12GB RAM, 256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 5,
+    "product_title": "OnePlus 11",
+    "product_image": "https://i.ibb.co.com/hZ9WJgm/oneplus-11.png",
+    "category": "Smartphone",
+    "price": 799.00,
+    "description": "Flagship killer with powerful performance and fast charging.",
+    "specification": [
+      "6.7-inch AMOLED display",
+      "Snapdragon 8 Gen 2 processor",
+      "50MP main camera",
+      "12GB RAM, 256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 6,
+    "product_title": "Samsung Galaxy Z Fold 5",
+    "product_image": "https://i.ibb.co.com/2sQqmty/samsung-z-fold-5.png",
+    "category": "Smartphone",
+    "price": 1799.00,
+    "description": "Foldable smartphone with large screen and premium features.",
+    "specification": [
+      "7.6-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 2 processor",
+      "200MP main camera",
+      "12GB RAM, 256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 7,
+    "product_title": "iPhone 14",
+    "product_image": "https://i.ibb.co.com/KySrRqV/iphone-14.png",
+    "category": "Smartphone",
+    "price": 799.00,
+    "description": "Compact and affordable iPhone with a powerful A15 Bionic chip.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A15 Bionic chip",
+      "12MP main camera",
+      "6GB RAM, 128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 8,
+    "product_title": "Google Pixel 7",
+    "product_image": "https://i.ibb.co.com/qkrYGmH/pixel-7.png",
+    "category": "Smartphone",
+    "price": 599.00,
+    "description": "Pure Android experience with excellent camera and AI features in a more compact size.",
+    "specification": [
+      "6.3-inch OLED display",
+      "Google Tensor G2 processor",
+      "50MP main camera",
+      "8GB RAM, 128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 9,
+    "product_title": "Samsung Galaxy F13",
+    "product_image": "https://i.ibb.co.com/9N5Cc8q/samsung-f13.png",
+    "category": "Smartphone",
+    "price": 299.00,
+    "description": "Compact flagship with a powerful camera and sleek design.",
+    "specification": [
+      "6.6 FHD+ PLS LCD Touchscreen",
+      "Octa-Core 2GHz, Exynos 850 (8nm)",
+      "Triple 50+5+2 MP on Rear, 8MP Selfie",
+      "4GB RAM, 64GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 10,
+    "product_title": "Xiaomi Redmi 14C",
+    "product_image": "https://i.ibb.co.com/fSkK0J1/redmi-14c.png",
+    "category": "Smartphone",
+    "price": 999.00,
+    "description": "Powerful and affordable flagship with a stunning display.",
+    "specification": [
+      "6.3-inch AMOLED display",
+      "Snapdragon 8 Gen 2 processor",
+      "50MP main camera",
+      "8GB RAM, 128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.4
+  }
+]
