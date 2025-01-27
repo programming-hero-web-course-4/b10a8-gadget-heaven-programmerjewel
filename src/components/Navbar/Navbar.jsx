@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import liked from '../../assets/liked.svg';
+import cart from '../../assets/cart.svg';
 
 const Navbar = () => {
   const links = (
@@ -7,10 +9,13 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="">Statistics</NavLink>
+        <NavLink to="/statistics">Statistics</NavLink>
       </li>
       <li>
-        <NavLink to="">Dashboard</NavLink>
+        <NavLink to="/dashboard">Dashboard</NavLink>
+      </li>
+      <li>
+        <NavLink to="/news">News</NavLink>
       </li>
     </>
   );
@@ -23,8 +28,9 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end gap-4">
+          <button className="bg-gray-500 p-2 rounded-3xl"><img src={cart} alt="" /></button>
+          <button className="bg-gray-500 p-2 rounded-3xl"><img src={liked} alt="" /></button>
         </div>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

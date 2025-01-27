@@ -11,6 +11,9 @@ import Home from './pages/Home/Home';
 import Statistics from './pages/statistics/Statistics'
 import Errorpage from './components/Error Page/Errorpage';
 import Dashboard from './pages/Dashboard/Dashboard';
+import News from './pages/News/News';
+import GadgetDetail from './components/GadgetDetail/GadgetDetail';
+import Gadgets from './components/Gadgets/Gadgets';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +23,14 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        children: [     
+          {
+            path: '/category/:category',
+            element: <Gadgets></Gadgets>,
+            loader: () =>fetch('../gadgets.json')
+          }
+        ]
       },
       {
         path: '/statistics',
@@ -29,6 +39,15 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>
+      },
+      {
+        path: '/news',
+        element: <News></News>
+      },
+      {
+        path: 'gadgets/:product_id',
+        element: <GadgetDetail></GadgetDetail>,
+        loader: ()=> fetch('/gadgets.json')
       }
     ]
   },
