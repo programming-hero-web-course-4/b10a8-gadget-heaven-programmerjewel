@@ -8,13 +8,19 @@ const Gadgets = () => {
   const {category} = useParams();
   
  const data = useLoaderData();
- 
+ console.log(data)
 
   // const categories = ['All products', 'Smartphone', 'Laptop', 'Smartwatch'];
    const[gadgets, setGadgets] = useState([]);
    useEffect(()=>{
-    const filteredProduct = [...data].filter(gadget => gadget.category === category )
-     setGadgets(filteredProduct)
+    if(category){
+      const filteredProduct = [...data].filter(gadget => gadget.category === category )
+      setGadgets(filteredProduct);
+    }
+    else{
+      setGadgets(data);
+    }
+    
 
 
    },[category, data])
@@ -31,7 +37,6 @@ const Gadgets = () => {
             gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
           }
         </div>
-        
       </div>   
     </div>
   );

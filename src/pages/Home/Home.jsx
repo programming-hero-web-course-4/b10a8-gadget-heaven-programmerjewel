@@ -13,7 +13,7 @@ const Home = () => {
       <h2 className="text-center font-bold text-2xl md:text-4xl  my-8 md:my-10">Explore Cutting-Edge Gadgets</h2>
       <div className="flex gap-4">
         <Categories></Categories>
-        <Outlet></Outlet>
+        <Outlet className="w-full"></Outlet>
       </div>
     </div>
   );
