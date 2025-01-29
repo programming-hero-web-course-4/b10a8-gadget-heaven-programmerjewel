@@ -8,6 +8,7 @@ const getStoredLikedList = () =>{
     return [];
   }
 }
+
 const addToStoredLikedList = (id) =>{
   const storedList= getStoredLikedList();
   if(storedList.includes(id)){

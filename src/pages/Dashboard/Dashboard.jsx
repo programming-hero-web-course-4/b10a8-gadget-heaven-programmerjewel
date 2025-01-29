@@ -1,4 +1,5 @@
-
+import Cart from "../../components/Cart/Cart"
+import Wishlist from '../../components/Wishlist/Wishlist'
 
 const Dashboard = () => {
   return (
@@ -10,6 +11,11 @@ const Dashboard = () => {
           <button className="btn rounded-3xl">Cart</button>
           <button className="btn rounded-3xl">Wishlist</button>
         </div>
+        <div>
+          <Cart></Cart>
+          <Wishlist></Wishlist>
+        </div>
+        
       </div>
     
     </div>

@@ -11,9 +11,11 @@ const Home = () => {
     <div className="bg-gray-100">
       <Banner></Banner>
       <h2 className="text-center font-bold text-2xl md:text-4xl  my-8 md:my-10">Explore Cutting-Edge Gadgets</h2>
-      <div className="flex gap-4">
-        <Categories></Categories>
-        <Outlet className="w-full"></Outlet>
+      <div className="flex gap-6">
+        <div className="w-1/5"><Categories></Categories></div>
+        <div  className="w-4/5"><Outlet></Outlet></div>
+        
+        
       </div>
     </div>
   );

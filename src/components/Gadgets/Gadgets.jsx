@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 const Gadgets = () => {
   const {category} = useParams();
   
- const data = useLoaderData();
- console.log(data)
+  const data = useLoaderData();
+
 
   // const categories = ['All products', 'Smartphone', 'Laptop', 'Smartwatch'];
    const[gadgets, setGadgets] = useState([]);
@@ -31,13 +31,11 @@ const Gadgets = () => {
   
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {
             gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
           }
         </div>
-      </div>   
     </div>
   );
 };

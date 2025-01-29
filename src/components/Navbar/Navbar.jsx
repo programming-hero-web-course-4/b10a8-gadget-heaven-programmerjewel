@@ -6,16 +6,16 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Home</NavLink>
       </li>
       <li>
-        <NavLink to="/statistics">Statistics</NavLink>
+        <NavLink to="/statistics" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Statistics</NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/dashboard" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Dashboard</NavLink>
       </li>
       <li>
-        <NavLink to="/news">News</NavLink>
+        <NavLink to="/news" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>News</NavLink>
       </li>
     </>
   );
@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-25 p-4 shadow overflow-x-hidden translate-x-[-60px]"
           >
             {links}
           </ul>
