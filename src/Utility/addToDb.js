@@ -1,3 +1,6 @@
+
+//wishlist functions
+
 const getStoredLikedList = () =>{
   const storedListStr = localStorage.getItem('liked-list');
   if(storedListStr){
@@ -21,6 +24,8 @@ const addToStoredLikedList = (id) =>{
   }
 }
 
+//cart functions
+
 const getStoredCartList = () =>{
   const storedListStr = localStorage.getItem('cart-list');
   if(storedListStr){
@@ -43,5 +48,17 @@ const addToStoredCartList = (id) =>{
   }
 }
 
+//delete single product from selected cart array
+const handleRemoveItem = (productId) => {
+  const storedList= getStoredCartList();
+  const remaining = storedList.filter(item => item.product_id !== productId);
+  localStorage.setItem('cart-list', JSON.stringify(remaining));
+};
 
-export{addToStoredLikedList, addToStoredCartList}
+const handleRemoveWishItem = (id) =>{
+  const storedList= getStoredLikedList();
+  const remaining = storedList.filter(product => product.product_id !== id);
+  localStorage.setItem('liked-list', JSON.stringify(remaining));
+}
+
+export{addToStoredLikedList, addToStoredCartList,getStoredCartList, getStoredLikedList, handleRemoveItem, handleRemoveWishItem}

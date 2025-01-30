@@ -3,7 +3,7 @@ const Footer = () => {
     <div>
       <footer className="p-10">
         <div className="text-center">
-          <h3 className="text-4xl font-extrabold pb-3">Gadget Haeven</h3>
+          <h3 className="md:text-2xl text-lg font-extrabold pb-3 ">Gadget Haeven</h3>
           <p className="text-lg text-gray-500">Trusted by thousands of customers and local dealers for shopping tech products at an exicing offers.</p>
         </div>
         <hr className="border-gray-300 my-5" />

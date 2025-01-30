@@ -21,16 +21,16 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
-          <a className="btn btn-ghost text-xl">Gadget Haeven</a>
+          <NavLink to="/" className=" font-semibold text-xl">Gadget Haeven</NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end gap-4">
-          <button className="bg-gray-500 p-2 rounded-3xl"><img src={cart} alt="" /></button>
-          <button className="bg-gray-500 p-2 rounded-3xl"><img src={liked} alt="" /></button>
+        <div className="navbar-end gap-3">
+          <button className="border border-gray-200 p-2 rounded-3xl"><img src={cart} alt="" /></button>
+          <button className="border border-gray-200 p-2 rounded-3xl"><img src={liked} alt="" /></button>
         </div>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

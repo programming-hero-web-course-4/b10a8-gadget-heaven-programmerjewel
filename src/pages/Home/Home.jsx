@@ -10,12 +10,10 @@ const Home = () => {
   return (
     <div className="bg-gray-100">
       <Banner></Banner>
-      <h2 className="text-center font-bold text-2xl md:text-4xl  my-8 md:my-10">Explore Cutting-Edge Gadgets</h2>
-      <div className="flex gap-6">
-        <div className="w-1/5"><Categories></Categories></div>
-        <div  className="w-4/5"><Outlet></Outlet></div>
-        
-        
+      <h2 className="text-center font-bold text-2xl md:text-4xl my-8">Explore Cutting-Edge Gadgets</h2>
+      <div className="w-11/12 mx-auto flex flex-col md:flex-row gap-3">
+        <div className="md:w-1/5 p-5"><Categories></Categories></div>
+        <div className="md:w-4/5 mb-6"><Outlet></Outlet></div>
       </div>
     </div>
   );
