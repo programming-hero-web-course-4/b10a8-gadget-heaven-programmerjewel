@@ -1,7 +1,8 @@
 
 import { useState } from "react";
-import CartContainer from "../../components/CartContainer/CartContainer";
-import WishlistContainer from "../../components/WishlistContainer/WishlistContainer";
+import CartContainer from '../../components/CartContainer/CartContainer'
+import WishlistContainer from '../../components/WishlistContainer/WishlistContainer'
+
 
 const Dashboard = () => {
 

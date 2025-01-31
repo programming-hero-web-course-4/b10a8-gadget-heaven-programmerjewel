@@ -1,36 +1,43 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import liked from '../../assets/liked.svg';
 import cart from '../../assets/cart.svg';
 
 const Navbar = () => {
+  const location = useLocation();
+  const isLocation = location.pathname==='/';
   const links = (
     <>
       <li>
-        <NavLink to="/" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Home</NavLink>
+        {
+          isLocation ? <NavLink to="/" className={({isActive})=> `text-white ${isActive ? 'underline font-semibold' : ''}`} >Home</NavLink> : <NavLink to="/" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Home</NavLink>
+        }
       </li>
       <li>
-        <NavLink to="/statistics" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Statistics</NavLink>
+        {isLocation ? <NavLink to="/statistics" className={({isActive})=> `text-white ${isActive ? 'underline font-semibold' : ''}`} >Statistics</NavLink> : <NavLink to="/statistics" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Statistics</NavLink>}
       </li>
       <li>
-        <NavLink to="/dashboard" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Dashboard</NavLink>
+        {isLocation ? <NavLink to="/dashboard" className={({isActive})=> `text-white ${isActive ? 'underline font-semibold' : ''}`} >Dashboard</NavLink> : <NavLink to="/dashboard" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>Dashboard</NavLink>}
       </li>
       <li>
-        <NavLink to="/news" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>News</NavLink>
+        {isLocation ? <NavLink to="/news" className={({isActive})=> `text-white ${isActive ? 'underline font-semibold' : ''}`} >News</NavLink> : <NavLink to="/news" className={({isActive})=>`text-violet-600 font-bold ${isActive ? 'bg-violet-600 text-white': ''}`}>News</NavLink>}
       </li>
     </>
   );
   return (
     <div>
-      <div className="navbar w-11/12 mx-auto">
+      <div className={`px-3 navbar w-11/12 mx-auto ${isLocation ? 'bg-violet-600' : ''}`}>
         <div className="navbar-start">
-          <NavLink to="/" className=" font-semibold text-xl">Gadget Haeven</NavLink>
+          {
+            isLocation? <NavLink to="/" className="text-white font-semibold text-xl">Gadget Haeven</NavLink> : <NavLink to="/" className="text-violet-600 font-semibold text-xl">Gadget Haeven</NavLink>
+          }
+          
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end gap-3">
-          <button className="border border-gray-200 p-2 rounded-3xl"><img src={cart} alt="" /></button>
-          <button className="border border-gray-200 p-2 rounded-3xl"><img src={liked} alt="" /></button>
+          <button className="border border-gray-200 p-2 rounded-3xl bg-white"><img src={cart} alt="" /></button>
+          <button className="border border-gray-200 p-2 rounded-3xl bg-white"><img src={liked} alt="" /></button>
         </div>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

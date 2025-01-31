@@ -1,7 +1,8 @@
 
+
 import cancel from '../../../src/assets/cancel.svg'
 
-const Wishlist = ({product, handleRemove}) => {
+const Wishlist = ({product}) => {
   const{product_id, product_title, product_image, price, description} = product;
   return (
     <div>
@@ -14,7 +15,7 @@ const Wishlist = ({product, handleRemove}) => {
                 <p className="text-gray-600 font-semibold">Price: $ {price}</p>
               </div>
               <div>
-                <button onClick={()=>handleRemove(product_id)} className='btn'>Cancel</button>
+                <button className='btn'>Cancel</button>
               </div>
             </div>
           </div>

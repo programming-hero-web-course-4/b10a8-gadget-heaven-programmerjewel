@@ -35,10 +35,11 @@ const CartContainer = () => {
     setCartList(sortedProducts);
   }
   
-  
 
-  // console.log(sorted);
-  // console.log(sortedByPrice);
+  const handleRemove = (id) =>{
+    
+  }
+
 
   return (
     <div className="bg-gray-100 py-4">

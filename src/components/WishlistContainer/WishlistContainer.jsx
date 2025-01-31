@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getStoredLikedList, handleRemoveWishItem } from "../../Utility/addToDb";
+import { getStoredLikedList } from "../../Utility/addToDb";
 import Wishlist from "../Wishlist/Wishlist";
 
 const WishlistContainer = () => {
@@ -22,11 +22,6 @@ const WishlistContainer = () => {
     setlikedList(likedList); 
   }, [data]);
 
-  const handleRemove = (id) =>{
-    handleRemoveWishItem(id);
-    const storedLikedGadgets = getStoredLikedList();
-    setlikedList(storedLikedGadgets);
-  }
 
   return (
     <div className="bg-gray-100 py-4">
@@ -34,7 +29,7 @@ const WishlistContainer = () => {
       <div className="w-11/12 mx-auto flex flex-col gap-5">
         {
           likedList.map((product) => (
-            <Wishlist handleRemove={handleRemove} product={product} key={product.product_id}></Wishlist>
+            <Wishlist product={product} key={product.product_id}></Wishlist>
           ))
         }
         </div>
